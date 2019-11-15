@@ -1,12 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
-    test123
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Multiple Select</title>
+        <link rel="stylesheet" href="multi_select.css">
+    </head>
+    <body>
+        <div id='root'>
+            <div class="wrapper">
+                <div class="form">
+                    <div>List A (<span class="num">3</span>)</div>
+                    <input type='text' placeholder="Search..."/>
+                    <i>Find <span class="num">3</span> item(s)</i>
+                    <select multiple></select>
+                </div>
+                <div class="btn-list">
+                    <input type="button" value=">>">
+                    <input type="button" value=">">
+                    <input type="button" value="<">
+                    <input type="button" value="<<">
+                </div>
+                <div class="form">
+                    <div>List B (<span class="num">3</span>)</div>
+                    <input type='text' placeholder="Search..." />
+                    <i>Find <span class="num">3</span> item(s)</i>
+                    <select multiple></select>
+                </div>
+            </div>
+        </div>
+        <script src='multi_select.js'></script>
+    </body>
 </html>
