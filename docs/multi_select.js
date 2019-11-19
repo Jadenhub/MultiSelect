@@ -70,20 +70,25 @@ const rList = [{name: 'item6', id: 6}, {name: 'item7', id: 7}];
     }
     init(selects, nums, state);
 
-    // function  handleInputKeyup(element, list, evt){
-    //     console.log(element);
-    //     console.log(list);
-    // }
-    // const handleLInputKeyup = handleInputKeyup.bind(null, {
-    //     select: selects[0],
-    //     totalCount: nums[0],
-    //     searchCount: num[1]
-    // }, state.lList);
-    // const handleRInputKeyup = handleInputKeyup.bind(null, {
-    //     select: selects[1],
-    //     totalCount: nums[2],
-    //     searchCount: num[3]
-    // }, state.rList);
+    function  handleInputKeyup(element, list, evt){
+        console.log(element);
+        console.log(list);
+    }
+    const handleLInputKeyup = handleInputKeyup.bind(null, {
+        select: selects[0],
+        totalCount: nums[0],
+        searchCount: nums[1]
+    }, state.lList);
+    const handleRInputKeyup = handleInputKeyup.bind(null, {
+        select: selects[1],
+        totalCount: nums[2],
+        searchCount: num[3]
+    }, state.rList);
+    inputs[0].addEventListener('keyup', handleLInputKeyup);
+    inputs[1].addEventListener('keyup', handleRInputKeyup);
+
+
+
     // function listen(selects, inputs, nums, state){
     //     function search(input){
     //         //const pattern = new RegExp("[`~!@#$^&*()=|{}':;',\\[\\].<>/?~！@#￥……&*（）——|{}【】‘；：”“'。，、？+]");
