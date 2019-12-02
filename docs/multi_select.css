@@ -4,6 +4,16 @@
     font-family: 'Arial', "PingFang SC", "Microsoft YaHei", sans-serif;
 }
 
+#root {
+    width: 650px;
+    display: flex;
+    flex-direction: column;
+}
+.home {
+    width: 60px;
+    margin: auto;
+    margin-top: 20px;
+}
 .wrapper {
     display: flex;
     flex-direction: column;
